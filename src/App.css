@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+* {
+    font-family: "Open Sans", sans-serif!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes swoopy {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-img-top {
+    display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-body {
+    background-size: 0%;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-height: 700px), (max-width: 576px) {
+    .card-img-top {
+        display: none;
+    }
+    .card-body {
+        background-size: cover
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.esri-popup {margin-bottom: 35px;}
+.esri-popup__footer {display: none}
+.esri-view-width-medium .esri-popup__main-container {width: auto;}
+.esri-view-orientation-landscape .esri-popup__main-container {width: auto;}
+.esri-view-width-less-than-medium .esri-popup__main-container {width: auto;}

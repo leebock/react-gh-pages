@@ -19,6 +19,7 @@
 
 .card-body {
     background-size: 0%;
+    background-color: brown;
 }
 
 @media (max-height: 700px), (max-width: 576px) {
